@@ -4,10 +4,10 @@
     <el-col :xs="24" :sm="22" :lg="14">
       <el-card>
         <h2>转账</h2>
-        <el-form :model="form" :rules="rules" ref="form">
-      <el-form-item label="合约账户名" prop="code">
+              <el-form-item label="合约账户名" prop="code">
         <el-input v-model="form.code"></el-input>
       </el-form-item>
+        <el-form :model="form" :rules="rules" ref="form">
           <el-form-item label="转账账户" prop="from">
             <el-select v-model="form.from" filterable placeholder="请选择账户">
               <el-option
